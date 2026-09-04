@@ -1,0 +1,40 @@
+# Local environment and Python caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+*.egg-info/
+build/
+dist/
+
+# OS, editor, notebook and temporary files
+.DS_Store
+._*
+.idea/
+.vscode/
+.ipynb_checkpoints/
+*.log
+tmp/
+
+# Secrets (do not commit credentials)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Trained models and large intermediate arrays are not source files
+results/models/
+*.joblib
+*.pkl
+*.pickle
+*.npy
+*.npz
+
+# Intentionally version data/raw, data/processed, data/splits and uv.lock.
+# Small final metrics and figures in results/ may be committed after review.
